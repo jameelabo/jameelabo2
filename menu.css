@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    color:white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #001;
+}
+
+.menu{
+    background-color: #123;
+    width:60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menu:hover{
+    width: 260px;
+    
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+  display: block;  
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+transition: 0.5s;
+}
+ul li a:hover, .active{
+    background-color: #ffffff55;
+    box-shadow: 5px 5px 10px white;
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a{
+    background-color: #f00;
+}
+ul li a i{
+    font-size: 30px;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
