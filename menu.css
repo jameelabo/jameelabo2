@@ -6,6 +6,7 @@
 }
 body{
     background-color: #001;
+    display: flex;
 }
 
 .menu{
@@ -36,7 +37,7 @@ ul li a{
   gap: 40px;
 transition: 0.5s;
 }
-ul li a:hover, .active{
+ul li a:hover, .active, .data-info .box:hover{
     background-color: #ffffff55;
     box-shadow: 5px 5px 10px white;
 }
@@ -70,4 +71,51 @@ ul li a i{
 .profile h2{
     font-size: 20px;
     text-transform: capitalize;
+}
+.content{
+   
+    width:100% ;
+    margin: 10px;
+}
+.title-info{
+    background-color: #0481ff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 10px 0;
+
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+
+
+}.data-info .box{
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.data-info .box i{
+    font-size: 40px;
+
+}
+.data-info .box .data{
+    text-align: center;
+
+}
+.data-info .box .data span{
+    font-size: 30px;
+
 }
